@@ -37,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 manoTekstas.setTextColor(android.graphics.Color.RED);
             }
         });
+// Trečio mygtuko susiejimas
+        Button mygtukas3 = findViewById(R.id.button3);
+
+        // Kas įvyks paspaudus trečią mygtuką
+        mygtukas3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Keičiame paties teksto fono spalvą į geltoną
+                manoTekstas.setBackgroundColor(android.graphics.Color.YELLOW);
+            }
+        });
+
 
     }
 }
