@@ -7,9 +7,6 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,5 +26,17 @@ public class MainActivity extends AppCompatActivity {
                 manoTekstas.setText("ISSOKANTIS TEKSTAS!");
             }
         });
+// Antro mygtuko susiejimas
+        Button mygtukas2 = findViewById(R.id.button2);
+
+        // Kas įvyks paspaudus antrą mygtuką
+        mygtukas2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Keičiame teksto spalvą į raudoną
+                manoTekstas.setTextColor(android.graphics.Color.RED);
+            }
+        });
+
     }
 }
