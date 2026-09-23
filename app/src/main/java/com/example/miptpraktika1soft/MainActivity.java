@@ -51,5 +51,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //Comment for revert
 }
